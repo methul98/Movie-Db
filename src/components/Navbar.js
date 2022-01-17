@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { addMovieToList, handleMovieSearch } from '../actions';
-import { data } from '../data';
+// import { data } from '../data';
 
 class Navbar extends Component {
   constructor(props) {
@@ -29,7 +29,7 @@ class Navbar extends Component {
     return (
       <div className="nav">
         <div className="search-container">
-          <input onChange={this.handleSearchChange} />
+          <input onChange={this.handleSearchChange} placeholder='Enter Movie name...'/>
           <button id="search-btn" onClick={this.handleSearchClick}>
             Search
           </button>
